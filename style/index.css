@@ -85,8 +85,6 @@ h4[blue] {
 }
 div[lo] {
   background: var(--grey);
-  position: relative;
-  bottom: 30px;
   height: 1000px;
 }
 .lo-heading {
@@ -112,4 +110,7 @@ div[lo] {
 .quality-des {
   font-size: 12px;
   width: 200px;
+}
+.quality-r {
+  margin-left: 18% !important;
 }
