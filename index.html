@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Parralax Engine</title>
     <link rel="stylesheet" href="style/index.css" />
+    <script src="https://unpkg.com/vue@3.0.0" defer></script>
     <script src="scripts/index.js" defer></script>
 </head>
 <body>
@@ -66,8 +67,21 @@ We level the playing field by offering you technology that has too often been re
                     Automating the majority of your customer service and inquiry handling.
                 </h5>
             </div>
+        </div> 
+        <div center>
+            <h4 blue offered>Products Offered</h4>
         </div>
-        
+        <div slideshowparent id="vueapp">
+            <div slide>
+                <p @click="prev"class="left-button"><img src="ArrowLeft.svg"></p>
+                <div left>
+                    <h4>{{name}}</h4>
+                    <p des>{{description}}/p>
+                </div>
+                <img src="image2.svg" width="300" slideimage>
+                <p @click="next"class="left-button"><img src="ArrowRight.svg"></p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

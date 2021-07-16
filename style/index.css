@@ -114,3 +114,36 @@ div[lo] {
 .quality-r {
   margin-left: 18% !important;
 }
+h4[offered] {
+  padding-right: 7% !important;
+}
+div[slideshow] {
+  height: 200px;
+  width: 500px;
+  background: var(--white);
+}
+div[slideshowparent] {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+div[slide] {
+  background: white;
+  height: 300px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+div[left] {
+  width: 40%;
+  margin-left: 50px;
+}
+p[des] {
+  font-size: 13px;
+}
+img[slideimage] {
+  margin-left: 80px;
+}
+.left-button {
+  font-size: 50px;
+}
