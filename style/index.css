@@ -1,9 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 :root {
   --white: #ffffff;
-  --nav: #232d95;
+  --nav: #1a4fd6;
   --lightblue: #1a4fd6;
   --grey: #f1eeef;
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("Nord-Medium.eot"); /* IE9 Compat Modes */
+  src: url("Nodrd-Medium.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("Nord-Medium.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("Nord-Medium.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("Nord-Medium.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("Nord-Medium.svg#svgFontName") format("svg"); /* Legacy iOS */
 }
 body {
   font-family: "Montserrat", sans-serif;
@@ -19,9 +28,11 @@ nav {
   width: 100%;
 }
 #nav-title {
-  font-size: 20px;
+  font-size: 30px;
   color: var(--white);
   margin-left: 50px;
+  font-family: "MyWebFont", fallback, sans-serif;
+  letter-spacing: 5px;
 }
 .links {
   margin-left: 500px;
@@ -35,7 +46,7 @@ nav {
 }
 .button-blue {
   background-color: var(--lightblue);
-  height: 30px;
+  height: 40px;
   width: 150px;
   display: flex;
   align-items: center;
@@ -62,7 +73,7 @@ h5 {
 }
 .spec {
   color: var(--white);
-  font-size: 12px;
+  font-size: 14px;
 }
 .button-white {
   width: 120px;
@@ -72,10 +83,12 @@ h5 {
   border: 2px solid;
   margin-left: 30px;
   font-size: 12px;
+  height: 35px;
+  font-size: 14px;
 }
 .buttons {
   display: flex;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 div[center] {
   text-align: center;
@@ -85,7 +98,7 @@ h4[blue] {
 }
 div[lo] {
   background: var(--grey);
-  height: 1000px;
+  height: 3000px;
 }
 .lo-heading {
   padding-top: 80px;
@@ -127,7 +140,8 @@ div[slideshowparent] {
   display: flex;
   justify-content: center;
 }
-div[slide] {
+div[slide],
+div[whyus] {
   background: white;
   height: 300px;
   width: 70%;
@@ -146,4 +160,78 @@ img[slideimage] {
 }
 .left-button {
   font-size: 50px;
+}
+.heading {
+  font-size: 30px;
+}
+.top-button-blue {
+  border: 2px solid white;
+}
+h4[vidtitle] {
+  margin-top: 20px;
+}
+div[advantage] {
+  text-align: center;
+  width: 30%;
+  border-right: 1px solid navy;
+}
+[advantagedes] {
+  font-size: 14px;
+}
+div[rad] {
+  padding-left: 30px;
+  padding-right: 20px;
+}
+div[rad2] {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+div[lastad] {
+  border-right: 0px;
+}
+div[clientslide] {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+#vue2 {
+  display: flex;
+  justify-content: center;
+}
+div[clienttext] {
+  margin-left: 50px;
+}
+[clientdes] {
+  font-size: 14px;
+}
+[clientrole] {
+  font-size: 18px;
+  font-weight: 40;
+  color: #474555;
+}
+[clientname] {
+  font-size: 20px;
+  color: #474555;
+}
+div[formcontainer] {
+  display: flex;
+}
+.rsvp input[type="text"],
+.rsvp input[type="email"] {
+  height: 40px;
+  width: 200px;
+  border: 0px;
+}
+.rsvp {
+  display: flex;
+  flex-direction: column;
+  margin-left: 90px;
+}
+.rsvp input[type="submit"] {
+  background-color: var(--lightblue);
+  color: white;
+  text-transform: capitalize;
+  height: 30px;
+  width: 200px;
+  border: 0px;
 }

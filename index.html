@@ -8,23 +8,24 @@
     <link rel="stylesheet" href="style/index.css" />
     <script src="https://unpkg.com/vue@3.0.0" defer></script>
     <script src="scripts/index.js" defer></script>
+    <script src="scripts/clients.js" defer></script>
 </head>
 <body>
     <nav>
         <div id="nav-title">
-           PARALLAX ENGINE
+            <img src="Parallax_Engine.png">
         </div>
         <div class="links">
             <a href='#' class="link">Our Products</a>
             <a href="#" class="link">About Us</a>
-            <a href="#" class="link button-blue">Request a Demo</a>
+            <a href="#" class="link button-blue top-button-blue">Request a Demo</a>
         </div>
     </nav>
     <div class="container">
     <div class="head">
         <div class="head-text">
         <h5 class="header">What we provide</h5>
-        <h2>
+        <h2 class="heading">
             AI and Machine Learning aided Stock Trading forecasts.
         </h2>
         <h5>Our suite Of products enable you To identify Opportunities Ahead of your Competition,  Reduce Risks And Save Time.</h5><br><br><br>
@@ -81,6 +82,71 @@ We level the playing field by offering you technology that has too often been re
                 <img src="image2.svg" width="300" slideimage>
                 <p @click="next"class="left-button"><img src="ArrowRight.svg"></p>
             </div>
+        </div>
+        <div center>
+        <h4 blue vidtitle>
+            Video Demonstration
+        </h4>
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/i0Y2X2PkON4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div center>
+        <h4 blue>Why us?</h4>
+        <div style="display:flex;justify-content:center;">
+        <div whyus>
+            <div advantage>
+                <img src="assets/lowcosts.svg" width="100">
+                <hr width="100">
+                <h6 advantageheader>Low Costs</h6>
+                <p advantagedes>Automating research with AI/Machine Learning of processes like building a portfolio for the market or generating signals
+                    saves lots of time and money.</p>
+            </div>
+            <div advantage rad>
+                <img width="100"src="assets/highspeeds.svg">
+                <h6 advantageheader>High Speeds</h6>
+                <p advantagedes>We have made sure to use High Speed servers to maximise data output and ensure you only have to wait a few minutes for output, rather than days. This process is also aided by our highly optimised algorithms.</p>
+            </div>
+            <div advantage rad2 lastad>
+                <img width="100" src="assets/safeandsecure.svg">
+                <h6 advantageheader>Safe and secure</h6>
+                <p advantagedes>All the data we provide is highly encrypted and can only be accessed by your business alone. We are transparent about our algorithms and our internal processes.</p>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div center>
+        <h4 blue>What our clients have to say</h4>
+        </div>
+        <div id="vue2">
+         <img src="ArrowLeft.svg" @click="prev">
+          <div clientslide>
+            <img :src="clientImage" />
+            <div clienttext>
+                <h3 clientname>
+                    {{clientName}}
+                </h3>
+                <h4 clientrole>{{clientRole}}</h4>
+                <p clientdes>"{{clientComment}}"</p>
+            </div>
+          </div>
+          <img src="ArrowRight.svg" @click="next">
+        </div>
+        <div center>
+            <h4 blue>
+                Get In Touch With Us
+            </h4>
+        </div>
+        <div formcontainer>
+            <img src="assets/illustration_form.svg" width="800">
+            <form class="rsvp">
+                <input type="text" placeholder=" &nbsp;Enter Name"><br>
+                <input type="text" placeholder=" Company Name"><br>
+                <input type="email" placeholder=" Email Address"><br>
+                <input type="text" placeholder=" Phone Number"><br>
+                <input type="submit" value="send">
+            </form>
+        </div>
+        <div center>
+            <h4 blue>About Us</h4>
         </div>
     </div>
 </body>
