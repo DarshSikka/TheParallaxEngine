@@ -2,9 +2,21 @@ const Highlighted = document.querySelector(".picker");
 const fullScreen = document.querySelector("img[mark=full]");
 const data = {
   products: [
-    { name: "Investment Management Suite", description: "des1.txt" },
-    { name: "Lorem Ipsum", description: "des2.txt" },
-    { name: "Dolor sit", description: "des3.txt" },
+    {
+      name: "Investment Management Suite",
+      description: "des1.txt",
+      image: "image2.svg",
+    },
+    {
+      name: "Lorem Ipsum",
+      description: "des2.txt",
+      image: "assets/lowcosts.svg",
+    },
+    {
+      name: "Dolor sit",
+      description: "des3.txt",
+      image: "assets/safeandsecure.svg",
+    },
   ],
 };
 
@@ -18,6 +30,7 @@ const app = Vue.createApp({
       Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
       sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et`,
       index: 0,
+      image: "image2.svg",
     };
   },
   methods: {
@@ -31,6 +44,7 @@ const app = Vue.createApp({
         ).text();
         const ndes = await des;
         this.description = ndes;
+        this.image = data.products[this.index].image;
       }
     },
     async prev() {
@@ -43,6 +57,7 @@ const app = Vue.createApp({
         ).text();
         const ndes = await des;
         this.description = ndes;
+        this.image = data.products[this.index].image;
       }
     },
   },
