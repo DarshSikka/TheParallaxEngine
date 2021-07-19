@@ -20,7 +20,7 @@ const data = {
   ],
 };
 
-fullScreen.width = screen.width;
+fullScreen.width = 1280;
 const app = Vue.createApp({
   name: "Application",
   data() {

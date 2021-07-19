@@ -6,6 +6,10 @@
   --grey: #f1eeef;
   --foot: black;
 }
+[contain] {
+  height: 720px;
+  width: 1280px;
+}
 @font-face {
   font-family: "MyWebFont";
   src: url("Nord-Medium.eot"); /* IE9 Compat Modes */
@@ -17,6 +21,8 @@
 }
 body {
   font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
 }
 nav {
   background: var(--nav);
@@ -25,8 +31,7 @@ nav {
   align-items: center;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  width: 1280px;
 }
 #nav-title {
   font-size: 30px;
@@ -36,7 +41,7 @@ nav {
   letter-spacing: 5px;
 }
 .links {
-  margin-left: 500px;
+  margin-left: 300px;
   display: flex;
   align-items: center;
 }
