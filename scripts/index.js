@@ -19,7 +19,12 @@ const data = {
     },
   ],
 };
-
+if (screen.width <= 500) {
+  console.log("Small screen detected");
+  document.querySelector("body").innerHTML =
+    "<h1>Pls visit the site on a pc for the best experience</h1> <h4>PARRALLAX ENGINE</h4> <h5>the engine that drives growth</h5>";
+  document.querySelector("body").style.display = "block";
+}
 fullScreen.width = 1280;
 const app = Vue.createApp({
   name: "Application",
