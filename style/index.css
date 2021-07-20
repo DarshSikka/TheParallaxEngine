@@ -269,10 +269,10 @@ div[formcontainer] {
   left: 13%;
 }
 [member2] {
-  left: 39%;
+  left: 38%;
 }
 [member3] {
-  left: 65%;
+  left: 63%;
 }
 footer {
   margin-top: 40px;
@@ -307,4 +307,12 @@ res {
   color: white;
   font-size: 10px;
   margin-right: 20px;
+}
+[reqdemohov]:hover {
+  background-color: white;
+  color: blue;
+}
+[getintouchhov]:hover {
+  background-color: black;
+  color: white;
 }
