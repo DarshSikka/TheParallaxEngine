@@ -133,9 +133,6 @@ div[lo] {
 .quality-r {
   margin-left: 18% !important;
 }
-h4[offered] {
-  padding-right: 7% !important;
-}
 div[slideshow] {
   height: 200px;
   width: 500px;
@@ -309,4 +306,5 @@ linksinfooter a {
 res {
   color: white;
   font-size: 10px;
+  margin-right: 20px;
 }
